@@ -66,9 +66,9 @@ func main() {
 		}
 	}()
 
-	router.StaticFile("/")
-	router.StaticFile("/favicon.ico")
-	router.StaticFile("/logo.png")
+	router.StaticFile("./index.html")
+	router.StaticFile("./favicon.ico")
+	router.StaticFile("./logo.png")
 
 	router.NoRoute(handler)
 
